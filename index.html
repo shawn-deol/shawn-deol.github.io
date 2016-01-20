@@ -25,6 +25,15 @@
    <!-- Script
    ================================================== -->
 	<script src="js/modernizr.js"></script>
+	<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
 
    <!-- Favicons
 	================================================== -->
@@ -84,7 +93,19 @@
 
    <!-- About Section
    ================================================== -->
-
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="slide1.jpg" />
+    </li>
+    <li>
+      <img src="slide2.jpg" />
+    </li>
+    <li>
+      <img src="slide3.jpg" />
+    </li>
+  </ul>
+</div>
    <!-- Resume Section
    ================================================== -->
    <section id="resume">
