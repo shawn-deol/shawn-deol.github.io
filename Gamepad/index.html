@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)file:///C:/My%20Web%20Sites/copy/www.nick.engineer/Gamepad/index.html -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="en"><!--<![endif]--><!-- Added by HTTrack --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- /Added by HTTrack -->
+
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   
+	<title>Automated Vegetable Slicer</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="./index_files/base.css">
+	<link rel="stylesheet" href="./index_files/main.css">
+   <link rel="stylesheet" href="./index_files/media-queries.css">         
+
+   <!-- Script
+   =================================================== -->
+	<script src="./index_files/modernizr.js"></script>
+
+   <!-- Favicons
+	=================================================== -->
+	<link rel="shortcut icon" href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/favicon.png">
+
+</head>
+
+<body>
+
+   <div id="top"></div>
+   
+
+   <!-- Header
+   =================================================== -->
+   <header id="main-header" class="opaque">
+
+   	<div class="row header-inner">
+
+	      <div class="logo">
+	         <a href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/index.html">Gurshan Deol</a>
+	      </div>
+
+	      <nav id="nav-wrap"><a id="toggle-btn" title="Menu" href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/Gamepad/index.html#"><span class="menu-text">Menu</span><span class="menu-icon"></span></a>         
+	         
+	         
+         	         
+
+	         <ul id="nav" class="nav">
+	            <li><a href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/index.html">Home</a></li>
+		         <li class="current"><a href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/index.html#projects">Projects</a></li>
+	            <li><a href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/index.html#about">About</a></li>
+	            <li><a href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/index.html#experience">Experience</a></li>           
+	            <li><a href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/index.html#contact">Contact</a></li>
+	         </ul> 
+
+	      </nav> <!-- /nav-wrap -->	      
+
+	   </div> <!-- /header-inner -->
+
+   </header>
+
+
+   <!-- Page Title
+   ================================================== -->
+   <section id="page-title">	
+   	  
+		<div class="row">
+
+			<div class="twelve columns">
+
+				<h1 style="font-size: 54px;">Projects</h1>
+
+			</div>			    
+
+		</div> <!-- /row -->	   
+
+   </section> <!-- /page-title -->
+
+
+   <!-- Content
+   ================================================== -->
+   <section id="content">
+
+   	<div class="row projects-content">
+
+	   	<div class="entry tab-whole nine columns centered">
+
+	         <header class="entry-header">
+
+					<h1 class="entry-title">3D Printed Game Controller</h1> 	
+                    		 
+						
+					<div class="entry-meta">
+						<ul>
+							<li>July 2016</li>
+							<span class="meta-sep">•</span>								
+							<li>
+								<a rel="skills tag" title="" href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/Gamepad/index.html#">Product Design</a>, 
+								<a rel="skills tag" title="" href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/Gamepad/index.html#">3D Printing</a>
+							</li>
+						</ul>
+					</div> 
+						 
+				</header>
+                
+                <div class="entry-content-media">
+					<div class="post-thumb">
+						<img src="./index_files/gamepad0.jpg">
+                        
+					</div> 
+				</div> 		
+
+				<div class="entry-content">
+
+					<p>I designed and printed a fully functional gamepad with 8 buttons and 2 bumpers. I'm working to continously upgrade with the controller with more functionality and hopefully soon have working capacitive touch buttons.</p>
+                    
+                    
+                    
+				</div>
+
+				<div class="entry-content-media">
+					<div class="post-thumb">
+                    <h2 align="center">Design</h2>
+						<img src="./index_files/gamepad1.jpg">
+                        <p align="center">The gamepad uses mechanical plastic springs to actuate the buttons. These springs are printed of PLA and grouped in 3s to center the button when it is pressed. An arduino micro board is used to transmit the button presses to a computer. The left and right bumpers are actuated through the deflection of a cantilever beam that completes the circuit between two parallel lines. The Arduino micro connects each button between a signal and ground. In the off state the signal pins transmit 3.3V to the open circuit and completing the circuit grounds the buttons. This was done so that impedance would not be an issue and so that a pull-up resistor could be avoided.</p>
+                        <br>
+                        
+                        <h2 align="center">Components</h2>
+                        <img src="./index_files/Gamepad2.jpg">
+                        
+                        <p>The gamepad like all Voxel8 prints is composed of 3 distinct parts. The plastic body, the silver trace and embedded components. In this print the plastic body acts as the case and part of the actuation mechanism. The springs are all entirely printed the print comes in 4 pieces, the main body and 3 button covers. Silver traces run through the body at 3 different layers to avoid shorting any of the pin outputs. Silver is also printed on the bumpers. Finally an Arduino Micro needs to be inserted into the print shortly before finishing to map all of the button inputs</p>
+                        
+                        <h2 align="center">Mechanisms</h2>
+                        <img src="./index_files/gamepad3.jpg">
+                      <p>Each button utilizes 3 evenly spaced springs to deflect and make contact with the trace below. The bumpers act as cantilevers and connect parallel traces. The traces are parallel unlike the buttons so that the exact location of the deflected cantilever does not matter as long as it makes contact.</p>
+                      
+                      
+                      
+                      
+                      
+                      
+                      <br>
+                        
+                         
+                        
+
+                        
+                        
+                        
+                        
+                        
+                        
+					</div> 
+                    <br>
+                    
+                    
+                    
+				</div> 					
+
+   </div></div></section> <!-- /content -->  
+
+
+   <!-- Footer
+   ================================================== -->
+      <footer>
+
+      <div class="row">       
+         <p class="copyright" align="center">© Copyright 2015 Gurshan Deol.</p>        
+
+         <div id="go-top" style="display: block;">
+            <a class="smoothscroll" title="Back to Top" href="file:///C:/My%20Web%20Sites/copy/www.nick.engineer/Gamepad/index.html#page-title"><span>Top</span><i class="fa fa-long-arrow-up"></i></a>
+         </div>
+
+      </div> <!-- /row -->
+
+   </footer> <!-- /footer -->
+
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="./index_files/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="../js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="./index_files/jquery-migrate-1.2.1.min.js"></script>   
+   <script src="./index_files/jquery.flexslider.js"></script>
+   <script src="./index_files/jquery.fittext.js"></script>
+   <script src="./index_files/backstretch.js"></script> 
+   <script src="./index_files/waypoints.js"></script>  
+   <script src="./index_files/main.js"></script>
+
+
+
+
+
+</body></html>
