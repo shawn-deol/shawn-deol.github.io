@@ -1,731 +1,373 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Gurshan Deol </title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" /> // Add the new slick-theme.css if you want the default styling
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
-
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">Gurshan Deol</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#projects">projects</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#work">Work Experience</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#art">Artwork</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Gurshan Deol</span>
-                        <hr class="star-light">
-                        <span class="skills">Currently Updating!</span>
-                    </div>
-                </div>
-            </div>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
     </header>
+    <!-- End header -->
 
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>projects</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/pisp.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/quadruped.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/gamepad.JPG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/delta.JPG" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/fallsafe.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/beowulf.JPG" class="img-responsive" alt="">
-                    </a>
-                </div>
-
-            </div>
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Gurshan Deol</h1>
+            <h2>Mechanical Design Engineer</h2>
+            <a href="#" class="btn-rounded-white">Download Resume</a>
         </div>
-    </section>
+        <!-- End #lead-content -->
 
-    <!-- Work Grid Section -->
-    <section class="success" id="work">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Work Experience</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
-            <div class="row">
+        <div id="lead-overlay"></div>
 
-                <div class="col-sm-4 portfolio-item">
-                    <div class="row">
-                        <div class="col-sm-4 ">
-                            <img src="img/portfolio/voxel8.png" class="img-responsive" style="width:100px;height:100px;">
-                        </div>
-                        <div class="col-md-8 ">
-                            <h4 class="text-left"> Voxel8 </h4>
-                            <h4 class="text-left"> Hardware Intern </h4>
-                            <h5 class="text-left"> Summer 2016 </h5>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="caption">
-                        <p>In my 4 month co-op I designed fixtures and implemented processes to improve our manufacturing capability.
-                            I helped troubleshoot many printer issue, wrote process automation Gcode and created some interesting
-                            3d electronic designs.</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <div class="row">
-                        <div class="col-sm-4 ">
-                            <img src="img/portfolio/ophardt.png" class="img-responsive" style="width:100px;height:100px;">
-                        </div>
-                        <div class="col-md-8 ">
-                            <h4 class="text-left"> Ophardt Hygiene </h4>
-                            <h4 class="text-left"> R&D Student</h4>
-                            <h5 class="text-left"> Fall 2015 </h5>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="caption">
-                        <p>While working as a project engineering intern at Ophardt Hygiene I created motor efficiency and energy
-                            consumption graphs for our products. I also designed and implemented a proof of concept level
-                            measuring system to troubleshoot overflowing bioreactors.</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <div class="row">
-                        <div class="col-sm-4 ">
-                            <img src="img/portfolio/vaspac.png" class="img-responsive" style="width:100px;height:100px;">
-                        </div>
-                        <div class="col-md-8 ">
-                            <h4 class="text-left"> VASPAC </h4>
-                            <h4 class="text-left">Systems Engineer </h4>
-                            <h5 class="text-left"> Systems Engineer </h5>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="caption">
-                        <p>During my co-op at VASPAC I worked as a process engineer designing a control console HMI. The HMI
-                            was programmed in Archestra and is intended for use at a power plant. Much of my work here was
-                            in process automation and UI design.</p>
-                    </div>
-                    </a>
-                </div>
-            </div>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
         </div>
-    </section>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-    <!-- About Section -->
-    <section id="about">
+    <div id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
-                    <hr class="star-primary">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-3">
-                    <p>I'm an Undergrad student studying Mechanical Engineering with an option in Engineering Biomechanics at
-                        the University of Waterloo. My interests lie in 3D printing, robotics and biologically inspired engineering. I also like traditional and digital art.
+                <div class="col-md-8">
+                    <p>
+                        I'm an Undergrad student studying Mechanical Engineering with a specialization in Engineering
+                        Biomechanics
+                        at the University of Waterloo. My interests lie in consumer product design, 3D printing,
+                        robotics and biologically inspired engineering.
+                        Outside of engineering I love to travel, thrift and play competitive games.
                     </p>
                 </div>
-                <img src="img/portfolio/waterloo.png" class="img-responsive" alt="">
-                <br>
-                <br>
-                <br>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="Resume.pdf" class="btn btn-success btn-lg">
-                        <i class="fa fa-download"></i> Download Resume
-                    </a>
-                </div>
-                                <br>
-                <br>
-                <br>
-                                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="Portfolio.pdf" class="btn btn-success btn-lg">
-                        <i class="fa fa-download"></i> Download Portfolio
-                    </a>
-                </div>
             </div>
         </div>
+    </div>
+    <!-- End #about -->
 
-    </section>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="March 2018 – August 2018">
+                <h3>Apple</h3>
+                <h4>Product Design Validation</h4>
+                <p>
+                    During my last co-op I worked on Apple's Product Design Validation team.
+                    In this role I designed electro-mechanical test vehicles and created data driven results. </p>
+            </div>
 
-    <!-- Work Grid Section -->
-    <section class="success" id="art">
+            <div data-date="September 2017 – March 2018">
+                <h3>Apple</h3>
+                <h4>Product Design Architecture</h4>
+                <p>
+                    During my second last co-op I was on the Mac Product Design Architecture team.
+                    I had the opportunity to prototype and iterate on very early design concepts. </p>
+            </div>
+
+            <div data-date="January 2017 – April 2017">
+                <h3>Formlabs</h3>
+                <h4>Special Projects</h4>
+                <p>
+                    At Formlabs I was working on the special portfolio team where I had the chance to design new
+                    hardware to improve the SLA print process. </p>
+            </div>
+
+            <div data-date="April 2016 – August 2016">
+                <h3>Voxel8</h3>
+                <h4>Hardware Design</h4>
+                <p>
+                    In my 4 month co-op at Voxel8 I designed fixtures and implemented processes to improve our
+                    manufacturing capability.
+                    I troubleshot printer issues, wrote python scripts to test devices and created pneumatic fixtures
+                    for cleaning. </p>
+            </div>
+
+            <div data-date="September 2015 – December 2015">
+                <h3>Ophardt Hygiene</h3>
+                <h4>R&D Student</h4>
+                <p>
+                    While working as an R&D intern at Ophardt Hygiene I created motor efficiency and energy consumption
+                    graphs for our products.
+                    I also designed and implemented a proof of concept level measuring system to troubleshoot
+                    overflowing bioreactors. </p>
+            </div>
+
+            <div data-date="Jan 2015 – April 2015">
+                <h3>Ophardt Hygiene</h3>
+                <h4>R&D Student</h4>
+                <p>
+                    During my co-op at VASPAC I was designing a control console HMI. The HMI was programmed in
+                    Archestra and was intended for use at a power plant. Much of my work here was in process automation
+                    and UI design. </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Waterloo</h3>
+            <span class="education-date">April 2019</span>
+            <h4>Bachelor of Science in Mechanical Engineering</h4>
+            <p>
+                During my time at Waterloo I was a part of the Biomechatronics and Robotics design teams, working on
+                both a wearable exoskeleton glove and a new 5+1 DOF robot arm. I also founded an Additive Design team
+                in my senior year, focused on redesigning products for additive manufacturing.
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Artwork</h2>
-                    <hr class="star-light">
-                </div>
-            </div>
 
-            <div class="gallery">
-                <div>
-                    <img data-lazy="img/portfolio/gobind.jpg" class="img-thumbnail img-responsive" alt="">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_1.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>University Rover Arm Redesign</h3>
+                        <p>
+                            During Fall 2018 I redesigned the UW URC Robot Arm from shoulder to wrist. This update includes
+                            adding a differential wrist mechanism, reducing the actuator size at every joint and reducing overall weight.
+                        </p>
+                        <a href="#">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
-                <div>
-                    <img data-lazy="img/portfolio/nanak.png" class="img-thumbnail img-responsive" alt="">
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_2.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Handheld Raspberry Pi Console</h3>
+                        <p>
+                            This was a portable Raspberry Pi gaming console that I had designed in summer of 2016. The desin evolved a lot from start to finish, 
+                            the entire project took 2-3 weeks and was done almost entirely with spare/extra parts in the office.
+                        </p>
+                        <a href="Project_2.pdf">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
-                <div>
-                    <img data-lazy="img/portfolio/machine.png" class="img-thumbnail img-responsive" alt="">
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_3.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>3D Printed Gamepad</h3>
+                        <p>
+                            This was a project I undertook while working at Voxel8. I wanted to create something that leverages the full ability of their printing technology.
+                            The final product was a modular 3D printed gamepad that could be additively manufactured.
+                        </p>
+                        <a href="Project_3.pdf">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
-                <div>
-                    <img data-lazy="img/portfolio/saitama.png" class="img-thumbnail img-responsive" alt="">
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_4.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>3D Printer Design</h3>
+                        <p>
+                            From 2016-2017 I designed a few different 3D printers while learning more of the technology. This includes a delta printer and CoreXY design.
+                            The designs are heavily based on both rostock and D-BOT designs.
+                        </p>
+                        <a href="Project_4.pdf">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
                 </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_5.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Robotic Vehicle Design</h3>
+                        <p>
+                            During my time at Formlabs I had wanted to create a project that uses multiple functional resin types to illustrate how Formlabs can create a full product.
+                            In my attempt I first worked on a tank that had printed suspension, treads and chassis but the elasticity of the flex resin was insufficient.
+                        </p>
+                        <a href="Project_5.pdf">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_6.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Desktop Electroplating Machine</h3>
+                        <p>
+                        This project was done as a course project in my senior year. The goal was to design a desktop machine that was capable of copper plating 3D printed parts made of ABS.
+                        Some of the challenges we faced included using safe, easily sourceable chemicals and achieving a strong plated coating that doesn't wipe off.
+                        </p>
+                        <a href="Project_6.pdf">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_7.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Beowulf Exoskeleton Glove</h3>
+                        <p>
+                        Beowulf is an exoskeleton hand that functions as a grip-assistive device for those in need. 
+                        I worked on the linkage design for the first prototype. 
+                        The project went on to the finals of the Hackaday Challenge in 2017 ($1000 prize).  
+                        </p>
+                        <a href="https://hackaday.io/project/13993-beowulf">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project_8.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>FallSafe Personal Assistant</h3>
+                        <p>
+                        Fallsafe is a project I worked on for Hack The North in 2016. The device is meant for elderly in retirement homes. The device is clipped to the user's belt and an IMU detects if a fall has occured.
+                        After fall detection, an alert is sent via the PagerDuty API to alert the resident nurse that the patient may be in need. The project went on to win the PagerDuty sponsor prize.      
+                        </p>
+                        <a href="https://devpost.com/software/fallsafe-527rza">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
             </div>
         </div>
-    </section>
+    </div>
+    <!-- End #projects -->
 
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Solidworks</li>
+            <li>Siemens NX</li>
+            <li>Autodesk Inventor</li>
+            <li>Autodesk Fusion 360</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>MATLAB</li>
+            <li>Ansys</li>
+            <li>JMP</li>
+            <li>DFM/DFA</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2018 GURSHAN DEOL
+                    </p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>gs2deol@uwaterloo.ca</h3>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-12">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://grabcad.com/gurshan.deol-1">GrabCAD</a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/gurshandeol">LinkedIn</a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/shawn-deol">Github</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; Gurshan Deol 2016
-                    </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- End footer -->
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>PiSP</h2>
-                            <hr class="star-primary">
-                            <img src="img/pisp/0.JPG" class="img-responsive img-centered" alt="">
-                            <p>A portable Raspberry Pi gaming console, designed and printed by me. The desin evolved a lot from
-                                start to finish, the entire project took 2-3 weeks and was done almost entirely with spare/extra
-                                parts in the office.
-                                <img src="img/pisp/1.PNG" class="img-responsive img-centered" alt="">
-                                <img src="img/pisp/2.PNG" class="img-responsive img-centered" alt=""> The controls are done
-                                through an Arduino Pro Micro which has an atmega32u4 microcontroller with a built in USB
-                                transciever.
-                            </p>
-                            <img src="img/pisp/5.jpg" class="img-responsive img-centered" alt="">
-                            <p> This allows the Arduio to act as a generic HID device, in this case it's acting as a custom gamepad.
-                                Power is provided by a 10AH Anker battery, I desoldered the low battery indicator and routed
-                                it to a large green LED visible on the front.
-                            </p>
-                            <img src="img/pisp/3.jpg" class="img-responsive img-centered" alt="">
-                            <p>
-                                This was done to provide indication of low battery so you don't damage your pi. There is a DPDT switch between the battery,
-                                Pi and USB A female port. This allows you to charge the battery while providing power to
-                                the Pi from a wall outlet. More details about this project can be found on the hackaday
-                                <a href="https://hackaday.io/project/12856-vapestation420">page</a>.
-                            </p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Quadruped Robot</h2>
-                            <hr class="star-primary">
-                            <p>This is a project that I am working on to create a quadruped walking robot. So far I've finished
-                                designing the legs which are the most integral and complicated mechanical system. </p>
-                            <img src="img/quadrobot/0.JPG" class="img-responsive img-centered" alt="">
-                            <img src="img/quadrobot/1.JPG" class="img-responsive img-centered" alt="">
-                            <p>
-                                Each leg uses 2 double rockers, one to actuate the foreleg and one to actuate the upper leg. The philosophy behind this design
-                                was to have all of the motors required for movement located as close together as possible.
-                                As you can see the two servos required to actuate the leg and the servo required to rotate
-                                the hip are all located within a single motor housing. Normally a quadruped, hexapod, ETC
-                                walking robot will have a motor at each successive joint. </p>
-                            <img src="img/quadrobot/2.JPG" class="img-responsive img-centered" alt="">
-                            <img src="img/quadrobot/3.JPG" class="img-responsive img-centered" alt="">
-                            <p>
-                                This is problematic as each successive joint increases the amount of torque required by the previous motor and also makes
-                                the movement jerkier. Having all the motors in a single location also allows me to use much
-                                cheaper, weaker motors and an overall smaller design. More information can be found on the
-                                GrabCAD <a href="https://grabcad.com/library/9g-servo-robot-1">page</a>
-                            </p>
-
-
-
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>3D Printed Gamepad</h2>
-                            <hr class="star-primary">
-                            <img src="img/gamepad/0.jpg" class="img-responsive img-centered" alt="">
-                            <p>The gamepad initially used mechanical plastic springs to actuate the buttons. These springs are
-                                printed of PLA and grouped in 3s to center the button when it is pressed. An arduino micro
-                                board is used to transmit the button presses to a computer. The left and right bumpers are
-                                actuated through the deflection of a cantilever beam that completes the circuit between two
-                                parallel lines. The Arduino micro connects each button between a signal and ground. In the
-                                off state the signal pins transmit 3.3V to the open circuit and completing the circuit grounds
-                                the buttons. This was done so that impedance would not be an issue and so that a pull-up
-                                resistor could be avoided.
-                            </p>
-                            <img src="img/gamepad/1.jpg" class="img-responsive img-centered" alt="">
-
-                            <p>The gamepad like all Voxel8 prints is composed of 3 distinct parts. The plastic body, the silver
-                                trace and embedded components. In this print the plastic body acts as the case and part of
-                                the actuation mechanism. The springs are all entirely printed the print comes in 4 pieces,
-                                the main body and 3 button covers. Silver traces run through the body at 3 different layers
-                                to avoid shorting any of the pin outputs. Silver is also printed on the bumpers. Finally
-                                an Arduino Micro needs to be inserted into the print shortly before finishing to map all
-                                of the button inputs.
-                            </p>
-                            <img src="img/gamepad/2.jpg" class="img-responsive img-centered" alt="">
-                            <p>
-                                Each button utilizes 3 evenly spaced springs to deflect and make contact with the trace below. The bumpers act as cantilevers
-                                and connect parallel traces. The traces are parallel unlike the buttons so that the exact
-                                location of the deflected cantilever does not matter as long as it makes contact.
-                            </p>
-
-                            <img src="img/gamepad/3.jpg" class="img-responsive img-centered" alt="">
-                            <p>
-                                While the prototypes were functional they weren't exactly ergonomic or reliable.
-                            </p>
-                            <img src="img/gamepad/4.jpg" class="img-responsive img-centered" alt="">
-                            <p>
-                                The newest version of the gamepad is much different. It has a more complex subassembly to actuate the buttons. The spring
-                                isn't seperated for each but rather works like a mesh, this allows you to change direction
-                                very easily. There is also space in the middle for a TFT screen and Raspberry Pi Zero. Unfortunately
-                                I left my co-op before finishing the final design.
-                            </p>
-                            <img src="img/gamepad/5.JPG" class="img-responsive img-centered" alt="">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Delta Printer</h2>
-                            <hr class="star-primary">
-
-                            <p>This is a delta printer I'm' currently designing. The majority of the design is based off the
-                                Kossel Mini printer, most of the work I'm doing is designing my own magnetic ball carriage
-                                and rail system to accomodate the 80/20 1010 Aluminum extrudes I had. The only reason I'm
-                                doing this is because there's no reprap design that uses 80/20 1010 extrudes.
-                            </p>
-                            <img src="img/delta/2.jpg" class="img-responsive img-centered" alt="">
-                            <p>The carriage has 4 pegs, two of which are chamfered to lock the belt to itself without using
-                                zipties. It also has a bolt and nut to tension the wheels on the rail.
-                            </p>
-                            <img src="img/delta/3.jpg" class="img-responsive img-centered" alt="">
-                            <p>The rod arm ends were printed in a Form 2 printer, they have cylindrical magnets embedded inside
-                                of a curved endcap to lock onto the ball bearings located on the carriage and effector.
-                            </p>
-                            <img src="img/delta/4.jpg" class="img-responsive img-centered" alt="">
-                            <img src="img/delta/5.jpg" class="img-responsive img-centered" alt="">
-                            <p>The arms themselves were printed from PLA on a Taz Lulzbot 5. The trusses are there for rigidity.
-                            </p>
-                            <img src="img/delta/0.jpg" class="img-responsive img-centered" alt="">
-                            <img src="img/delta/1.jpg" class="img-responsive img-centered" alt="">
-
-                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>FallSafe</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/fallsafe.jpg" class="img-responsive img-centered" alt="">
-                            <p>This was a project done for Hack The North 2016. Fallsafe is a portable fall detection system
-                                using a Raspberry Pi 3, 2500mAH battery and 9DOF IMU from Sparkfun. The device detects falls
-                                triggered by a change in Accelereration and angular velocity. After a fall is detected, an
-                                alert is sent through the PagerDuty API to alert the emergency contact of the user. I worked
-                                on writing the python script to determine when a fall occured and what actions to take. This
-                                project won the PagerDuty sponsor prize, more information can be found on the devpost
-                                <a href="http://devpost.com/software/fallsafe-527rza">link</a>
-                            </p>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Beowulf</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/beowulf.JPG" class="img-responsive img-centered" alt="">
-                            <p>This is a project being done by the Biomechatronics club at the University of Waterloo. Project
-                                Beowulf is an attempt to create a 3D printed exoskeleton glove that increases a user's grip
-                                strength.' I'm helping in the design of the mechanical linkages that help actuate the fingers,
-                                more information can be found at the Hackaday
-                                <a href="https://hackaday.io/project/13993-beowulf">page.</a>
-                            </p>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Bio-Reactor Level Measurement</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
-                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
-                                $12!
-                            </p>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>CNC Air Pressure Control</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set
-                                by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download
-                                their free set with 16 icons, or you can purchase the entire set with 146 icons for only
-                                $12!
-                            </p>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>test
-                            </p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="slider.js"></script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
